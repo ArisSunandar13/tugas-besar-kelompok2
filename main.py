@@ -119,7 +119,7 @@ class Kasir:
             print("--------------------")
 
     def simpan_database_produk(self):
-        with open("dbproduk.json", "w") as file:
+        with open("./database/db_produk.json", "w") as file:
             produk_data = []
             for produk in self.produk_list:
                 produk_data.append({
@@ -131,7 +131,7 @@ class Kasir:
         print("Database produk berhasil disimpan!")
 
     def simpan_database_struk(self):
-        with open("dbstruk.json", "w") as file:
+        with open("./database/db_struk.json", "w") as file:
             struk_data = []
             for order in self.order_list:
                 order_data = {}
@@ -143,7 +143,7 @@ class Kasir:
 
     def load_database_produk(self):
         try:
-            with open("dbproduk.json", "r") as file:
+            with open("./database/db_produk.json", "r") as file:
                 produk_data = json.load(file)
                 for data in produk_data:
                     produk = Produk.from_dict(data)
@@ -154,7 +154,7 @@ class Kasir:
 
     def load_database_struk(self):
         try:
-            with open("dbstruk.json", "r") as file:
+            with open("./database/db_struk.json", "r") as file:
                 struk_data = json.load(file)
                 for order_data in struk_data:
                     order = {}
