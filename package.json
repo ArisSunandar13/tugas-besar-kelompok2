@@ -1,0 +1,16 @@
+{
+  "name": "tugas-besar-kelompok2",
+  "version": "1.0.0",
+  "description": "## Point of Sales (PoS) Warunk Mama Padil",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pos": "nodemon --exec \"python3\" main.py"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
