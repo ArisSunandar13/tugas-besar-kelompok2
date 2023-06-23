@@ -23,22 +23,26 @@ def back_to_menu(key):
 
 
 # LIST PRODUCT
-def list_product(data=get_data_product(), isSearch=True):
-    admin.header('List Product', 'Menu')
+def list_product(data=get_data_product(), isSearch=True, isRecall=False):
+    if isRecall:
+        admin.header('List Product', 'Menu')
     view.text_in_line(liner='-')
     print(f"   {'No.':<5}{'Nama':<25}{'Harga':<15}{'Stok':<10}")
     view.text_in_line(liner='-')
     for i, product in enumerate(data):
+        if (i+1) % 6 == 0:
+            print()
         print(
             f"   {str(i+1)+'.':<5}{product['name']:<25}{view.format_rupiah(product['price']):<15}{product['quantity']:<10}")
     view.text_in_line(liner='-')
     print()
 
-    if isSearch:
-        search_product()
-    else:
-        input('Enter untuk lanjut')
-        list_product()
+    if not isRecall:
+        if isSearch:
+            search_product()
+        else:
+            input('Enter untuk lanjut')
+            list_product()
 
 
 def search_product(data=get_data_product()):
@@ -137,7 +141,133 @@ def add_product(data_recall={}):
 
 # UPDATE PRODUCT
 def update_product(data=get_data_product()):
-    input('test')
+    found_products = []
+    admin.header('Update Produk', 'Menu')
+    list_product(isSearch=False, isRecall=True)
+
+    key = input("   Pilih Produk [No/Nama] : ")
+    back_to_menu(key)
+
+    if key.__len__() == 0:
+        update_product()
+    elif key.isnumeric():
+        tmp_product = data[int(key)-1]
+        list_product([tmp_product], False, True)
+    elif not key.isnumeric():
+        for product in data:
+            if fuzz.partial_ratio(key, product['name']) >= 75:
+                found_products.append(product)
+
+        if found_products.__len__() < 1:
+            print()
+            view.text_in_line('Produk tidak ditemukan', color='red')
+            print()
+            input('Enter untuk lanjut')
+        elif found_products.__len__() == 1:
+            tmp_product = found_products[0]
+            list_product(found_products, False, True)
+        elif found_products.__len__() > 1:
+            print()
+            view.text_in_line('Ditemukan lebih dari 1 produk', color='green')
+            print()
+            input('Enter untuk lanjut')
+            list_product(found_products, False, True)
+            tmp_product = research_products(found_products)
+
+    admin.header('Update Produk', 'Menu')
+    list_product([tmp_product], False, True)
+    product = input_product(data_product=tmp_product)
+
+    all_products = get_data_product()
+    for i, item in enumerate(all_products):
+        if tmp_product['name'] == item['name'] and tmp_product['price'] == item['price']:
+            all_products[i] = product
+
+    services.post(db_product, all_products)
+
+    print()
+    view.text_in_line(
+        f"Produk '{tmp_product['name']}' berhasil diubah", color='green')
+    print()
+    input('Enter untuk lanjut')
+    update_product()
+
+
+def input_product(data={}, data_product={}):
+    admin.header('Update Produk', 'Menu')
+    list_product([data_product], False, True)
+    if data.__len__() >= 1:
+        print(f"   {'Nama produk baru':<17} : {data['name']}")
+    else:
+        name = input(f"   {'Nama produk baru':<17} : ")
+        back_to_menu(name)
+        if name.__len__() < 3:
+            print()
+            view.text_in_line('Nama minimal 3 karakter', color='red')
+            print()
+            input('Enter untuk lanjut')
+            input_product(data_product=data_product)
+        elif name.isnumeric():
+            print()
+            view.text_in_line('Nama tidak valid', color='red')
+            print()
+            input('Enter untuk lanjut')
+            input_product(data_product=data_product)
+        else:
+            data['name'] = name
+
+    if data.__len__() >= 2:
+        print(f"   {'Harga produk baru':<17} : {data['price']}")
+    else:
+        price = input(f"   {'Harga produk baru':<17} : ")
+        back_to_menu(price)
+        if price.__len__() < 3:
+            print()
+            view.text_in_line('Nama minimal 3 karakter', color='red')
+            print()
+            input('Enter untuk lanjut')
+            input_product(data, data_product=data_product)
+        elif not price.isnumeric():
+            print()
+            view.text_in_line('Harga tidak valid', color='red')
+            print()
+            input('Enter untuk lanjut')
+            input_product(data, data_product=data_product)
+        else:
+            data['price'] = price
+
+    quantity = input(f"   {'Stok produk baru:':<17} : ")
+    back_to_menu(quantity)
+    if quantity.__len__() == 0:
+        input_product(data, data_product=data_product)
+    elif not quantity.isnumeric():
+        print()
+        view.text_in_line('Quantity tidak valid', color='red')
+        input()
+        print()
+        input_product(data, data_product=data_product)
+    else:
+        data['quantity'] = quantity
+
+    return data
+
+
+def research_products(data):
+    admin.header('Update Product', 'Menu')
+    list_product(data, False, True)
+    key = input("   'Pilih Produk [No] : ")
+    back_to_menu(key)
+    if key.__len__() == 0:
+        research_products(data)
+    if not key.isnumeric():
+        print()
+        view.text_in_line(
+            f'Pilih hanya No 1 sampai {data.__len__()}', color='red')
+        print()
+        input('Enter untuk lanjut')
+        research_products(data)
+    if key.isnumeric():
+        return data[int(key)-1]
 
 
 # def deleting_user(data):

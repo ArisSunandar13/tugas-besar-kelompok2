@@ -18,5 +18,15 @@
         "name": "miesedap",
         "price": "2350",
         "quantity": "145"
+    },
+    {
+        "name": "lemonilo",
+        "price": "6000",
+        "quantity": "124"
+    },
+    {
+        "name": "Samyang",
+        "price": "14500",
+        "quantity": "100"
     }
 ]
