@@ -64,11 +64,21 @@ def num_to_char(num):
     return chr(65 + num)
 
 
-def print_menu(list, start=0):
+def print_menu(list1, list2=[], list3=[], start=0):
     text_in_line(liner='-')
     print(f"   {'KEY':<7}{'ACTIONS'}")
     text_in_line(liner='-')
-    for i, text in enumerate(list):
+    for i, text in enumerate(list1 + list2 + list3):
+        if list1.__len__() == i:
+            print()
+        if list2.__len__() != 0 and list2.__len__() + list1.__len__() == i:
+            print()
+
         print(f"   {num_to_char(i)+'.':<7}{text}")
+
     text_in_line(liner='-')
     print()
+
+
+def format_rupiah(data):
+    return 'Rp.{:,}'.format(int(data)).replace(',', '.')

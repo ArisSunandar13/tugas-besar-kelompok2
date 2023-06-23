@@ -2,6 +2,7 @@ import src.login as login
 import src.view as view
 import src.service_user as service_user
 import src.services as services
+import src.service_product as service_product
 
 
 def header(title, backto):
@@ -16,12 +17,15 @@ def main():
     user = services.get_last_log_history()
 
     menu_user = ['List User', 'Add User', 'Update User', 'Delete User']
+    menu_product = ['List & Search Product',
+                    'Add Product', 'Update Product', 'Delete Product']
+    menu_transaction = ['List & Search Transaction']
 
     header('Menu Admin', 'Login')
-    view.print_menu(menu_user)
+    view.print_menu(menu_user, menu_product, menu_transaction)
 
-    key = input('   Pilih Menu : ').upper()
-    # key = 'D'
+    # key = input('   Pilih Menu : ').upper()
+    key = 'E'
 
     if key == '0':
         login.main()
@@ -41,3 +45,13 @@ def main():
             service_user.update_user()
         if key == 'D':
             service_user.delete_user()
+        if key == 'E':
+            service_product.list_product()
+        if key == 'F':
+            pass
+        if key == 'G':
+            pass
+        if key == 'H':
+            pass
+        if key == 'I':
+            pass
