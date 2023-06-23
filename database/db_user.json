@@ -10,8 +10,13 @@
         "role": "kasir"
     },
     {
-        "username": "sikasir",
-        "password": "kasir",
+        "username": "sik",
+        "password": "kas",
         "role": "kasir"
+    },
+    {
+        "username": "siadmn",
+        "password": "siadmin",
+        "role": "admin"
     }
 ]

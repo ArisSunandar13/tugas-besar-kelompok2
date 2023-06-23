@@ -21,7 +21,7 @@ def main():
     view.print_menu(menu_user)
 
     key = input('   Pilih Menu : ').upper()
-    # key = 'B'
+    # key = 'C'
 
     if key == '0':
         login.main()
@@ -34,7 +34,10 @@ def main():
     else:
         if key == 'A':
             header('List User', 'Menu')
-            service_user.list_user()
+            service_user.list_user(isBack=True)
         if key == 'B':
-            header('Tambah User', 'Menu')
             service_user.add_user()
+        if key == 'C':
+            service_user.update_user()
+        if key == 'D':
+            service_user.delete_user()
