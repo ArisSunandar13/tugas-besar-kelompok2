@@ -25,7 +25,7 @@ def main():
     view.print_menu(menu_user, menu_product, menu_transaction)
 
     # key = input('   Pilih Menu : ').upper()
-    key = 'E'
+    key = 'G'
 
     if key == '0':
         login.main()
@@ -48,9 +48,9 @@ def main():
         if key == 'E':
             service_product.list_product()
         if key == 'F':
-            pass
+            service_product.add_product()
         if key == 'G':
-            pass
+            service_product.update_product()
         if key == 'H':
             pass
         if key == 'I':
