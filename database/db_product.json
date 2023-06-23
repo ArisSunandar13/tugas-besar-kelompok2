@@ -1,24 +1,20 @@
 [
     {
-        "code": "S215",
         "name": "sarimi",
         "price": "2000",
         "quantity": "10"
     },
     {
-        "code": "I691",
         "name": "Indomie",
         "price": "3250",
         "quantity": "160"
     },
     {
-        "code": "S947",
         "name": "supermie",
         "price": "5000",
         "quantity": "150"
     },
     {
-        "code": "M407",
         "name": "miesedap",
         "price": "2350",
         "quantity": "145"

@@ -21,7 +21,7 @@ def main():
     view.print_menu(menu_user)
 
     key = input('   Pilih Menu : ').upper()
-    # key = 'C'
+    # key = 'D'
 
     if key == '0':
         login.main()

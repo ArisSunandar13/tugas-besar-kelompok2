@@ -10,13 +10,18 @@
         "role": "kasir"
     },
     {
-        "username": "sik",
-        "password": "kas",
+        "username": "123",
+        "password": "12345",
         "role": "kasir"
     },
     {
-        "username": "siadmn",
-        "password": "siadmin",
+        "username": "blabla",
+        "password": "blabla",
+        "role": "kasir"
+    },
+    {
+        "username": "pulupulu",
+        "password": "pulu",
         "role": "admin"
     }
 ]

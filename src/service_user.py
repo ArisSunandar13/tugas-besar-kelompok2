@@ -7,13 +7,14 @@ from fuzzywuzzy import fuzz
 
 load_dotenv()
 db_user = os.getenv('DB_USER')
+data_db_user = services.get(db_user)
 
 global tmp_user
 tmp_user = {}
 
 
 def data_users():
-    return services.get(db_user)
+    return data_db_user
 
 
 def login(username, password):
@@ -52,6 +53,7 @@ def list_user(data=data_users(), isBack=False, isPwd=False):
         input('Enter untuk kembali ke Menu')
         admin.main()
 
+
 # ADD USER
 def add_user(isBack=False):
     admin.header('Tambah User', 'Menu')
@@ -85,14 +87,16 @@ def add_user(isBack=False):
         else:
             tmp_user['role'] = 'kasir'
 
-        data_users().append(tmp_user)
-        result = services.post(db_user, data_users())
+        data = data_users()
+        data.append(tmp_user)
+        result = services.post(db_user, data)
 
         print()
         view.text_in_line(
             f"User '{result['username']}' berhasil ditambahkan sebagai '{result['role']}", color='green')
         print()
         input('Enter untuk kembali ke Menu')
+        data_users()
         admin.main()
 
 
@@ -147,14 +151,16 @@ def input_update_user(data, isRecall=False, user={}):
     for index, item in enumerate(get_data_users):
         if item['username'] == data['username'] and item['password'] == data['password']:
             get_data_users[index] = user
-    
+
     result = services.post(db_user, get_data_users)
-    
+
     print()
-    view.text_in_line(f'User {tmp_user["username"]} berhasil diubah', color='green')
+    view.text_in_line(
+        f'User {tmp_user["username"]} berhasil diubah', color='green')
     print()
     input('Enter untuk lanjut')
     admin.main()
+
 
 # UPDATE USER
 def update_user(data=data_users(), isRecall=False):
@@ -212,6 +218,79 @@ def update_user(data=data_users(), isRecall=False):
     input_update_user(tmp_user)
 
 
+def deleting_user(data):
+    tmp_user = data
+    get_data_users = data_users()
+
+    konfirm = input('   Anda yakin? [Y/N] : ').upper()
+
+    if konfirm != 'Y' and konfirm != 'N':
+        print()
+        view.text_in_line('Inputkan Y atau N')
+        print()
+        input('Enter untuk lanjut')
+
+    if konfirm == 'Y':
+        for index, user in enumerate(get_data_users):
+            if data == user:
+                del get_data_users[index]
+        services.post(db_user, get_data_users)
+        print()
+        view.text_in_line(
+            f"User '{tmp_user['username']}' berhasil dihapus", color='green')
+        print()
+        input('Enter untuk lanjut')
+        delete_user()
+
+    if konfirm == 'N':
+        delete_user()
+
+
 # DELETE USER
-def delete_user():
-    input('delete')
+def delete_user(data=data_users(), isRecall=False):
+    user_selected = []
+    ratio = 80
+    index = 0
+    key = ''
+
+    admin.header('Delete User', 'Menu')
+
+    list_user(data)
+
+    if isRecall:
+        key = input('   Pilih User [No] : ')
+        if not key.isnumeric():
+            print()
+            view.text_in_line(
+                f'Pilih hanya No 1 sampai {data.__len__()}', color='red')
+            print()
+            input('Enter untuk lanjut')
+            delete_user(data)
+    else:
+        key = input('   Pilih User [No/Username] : ')
+    back_to_menu(key)
+
+    if key.__len__() == 0:
+        delete_user()
+    elif key.isnumeric():
+        deleting_user(data[int(key)-1])
+    else:
+        for i, user in enumerate(data):
+            if fuzz.partial_ratio(key, user['username']) >= ratio:
+                index = i
+                user_selected.append(user)
+
+        if user_selected.__len__() == 0:
+            print()
+            view.text_in_line('User tidak ditemukan', color='red')
+            print()
+            input('Enter untuk lanjut')
+            delete_user()
+        elif user_selected.__len__() > 1:
+            print()
+            view.text_in_line('Ditemukan lebih dari 1 user', color='green')
+            print()
+            input('Enter untuk lanjut')
+            delete_user(user_selected, True)
+        else:
+            deleting_user(index)
