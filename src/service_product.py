@@ -4,6 +4,7 @@ import src.services as services
 import src.view as view
 import src.admin as admin
 from fuzzywuzzy import fuzz
+import src.kasir as kasir
 
 load_dotenv()
 db_product = os.getenv('DB_PRODUCT')
@@ -17,15 +18,19 @@ def get_data_product():
     return data_products
 
 
-def back_to_menu(key):
-    if key == '0':
+def back_to_menu(key, isKasir=False):
+    if key == '0' and not isKasir:
         admin.main()
+    if key == '0' and isKasir:
+        kasir.main()
 
 
 # LIST PRODUCT
-def list_product(data=get_data_product(), isSearch=True, isRecall=False):
-    if isRecall:
+def list_product(data=get_data_product(), isSearch=True, isRecall=False, isKasir=False):
+    if isRecall and not isKasir:
         admin.header('List Product', 'Menu')
+    if isRecall and isKasir:
+        kasir.header('List Product', 'Menu')
     view.text_in_line(liner='-')
     print(f"   {'No.':<5}{'Nama':<25}{'Harga':<15}{'Stok':<10}")
     view.text_in_line(liner='-')
@@ -39,23 +44,23 @@ def list_product(data=get_data_product(), isSearch=True, isRecall=False):
 
     if not isRecall:
         if isSearch:
-            search_product()
+            search_product(isKasir=isKasir)
         else:
             input('Enter untuk lanjut')
             list_product()
     else:
-        search_product()
+        search_product(isKasir=isKasir)
 
 
-def search_product(data=get_data_product()):
+def search_product(data=get_data_product(), isKasir=False):
     found_products = []
     ratio = 75
 
     key = input('   Cari Product [No/Nama] : ')
-    back_to_menu(key)
+    back_to_menu(key, isKasir=isKasir)
 
     if key.__len__() == 0:
-        list_product(isRecall=True)
+        list_product(isRecall=True, isKasir=isKasir)
     if key.isnumeric():
         found_products.append(data[int(key)-1])
     if key.isalnum():
@@ -63,7 +68,7 @@ def search_product(data=get_data_product()):
             if fuzz.partial_ratio(key, product['name']) >= ratio:
                 found_products.append(product)
 
-    list_product(found_products, isRecall=True)
+    list_product(found_products, isRecall=True, isKasir=isKasir)
 
 
 # ADD PRODUCT

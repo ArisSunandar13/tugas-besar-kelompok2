@@ -1,5 +1,7 @@
 import src.view as view
 import src.services as services
+import src.login as login
+import src.service_product as service_product
 
 
 def main():
@@ -11,7 +13,23 @@ def main():
     header('Menu Kasir', 'Login')
     view.print_menu(menu_kasir)
     
-    key = input(f"   Pilih Menu : ")
+    key = input(f"   Pilih Menu : ").upper()
+    if key == '0':
+        login.main()
+        
+    if key.__len__() == 0:
+        main()
+        
+    if not key.isalpha():
+        print()
+        view.text_in_line('Inputkan sebuah huruf. Contoh : A')
+        print()
+        input('Enter untuk lanjut')
+        main()
+    else:
+        if key == 'A':
+            header('List Product', 'Menu')
+            service_product.list_product(isKasir=True)
 
 
 def header(title, backto):
