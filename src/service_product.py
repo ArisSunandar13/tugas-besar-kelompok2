@@ -270,79 +270,79 @@ def research_products(data):
         return data[int(key)-1]
 
 
-# def deleting_user(data):
-    # tmp_user = data
-    # get_data_users = data_users()
+# DELETE PRODUCT
+def delete_product(data=get_data_product(), isRecall=False):
+    selected_products = []
+    ratio = 80
+    index = 0
+    key = ''
 
-    # konfirm = input('   Anda yakin? [Y/N] : ').upper()
+    admin.header('Delete Produk', 'Menu')
 
-    # if konfirm != 'Y' and konfirm != 'N':
-    #     print()
-    #     view.text_in_line('Inputkan Y atau N')
-    #     print()
-    #     input('Enter untuk lanjut')
+    list_product(data, False, True)
 
-    # if konfirm == 'Y':
-    #     for index, user in enumerate(get_data_users):
-    #         if data == user:
-    #             del get_data_users[index]
-    #     services.post(db_user, get_data_users)
-    #     print()
-    #     view.text_in_line(
-    #         f"User '{tmp_user['username']}' berhasil dihapus", color='green')
-    #     print()
-    #     input('Enter untuk lanjut')
-    #     delete_user()
+    if isRecall:
+        key = input('   Pilih Produk [No] : ')
+        if not key.isnumeric():
+            print()
+            view.text_in_line(
+                f'Pilih hanya No 1 sampai {data.__len__()}', color='red')
+            print()
+            input('Enter untuk lanjut')
+            delete_product(data)
+    else:
+        key = input('   Pilih Produk [No/Name] : ')
+    back_to_menu(key)
 
-    # if konfirm == 'N':
-    #     delete_user()
+    if key.__len__() == 0:
+        delete_product()
+    elif key.isnumeric():
+        deleting_product(data[int(key)-1])
+    else:
+        for product in data:
+            if fuzz.partial_ratio(key, product['name']) >= ratio:
+                selected_products.append(product)
+
+        if selected_products.__len__() == 0:
+            print()
+            view.text_in_line('Produk tidak ditemukan', color='red')
+            print()
+            input('Enter untuk lanjut')
+            delete_product()
+        elif selected_products.__len__() > 1:
+            print()
+            view.text_in_line('Ditemukan lebih dari 1 produk', color='green')
+            print()
+            input('Enter untuk lanjut')
+            delete_product(selected_products, True)
+        else:
+            deleting_product(selected_products[0])
 
 
-# DELETE USER
-# def delete_user(data=data_users(), isRecall=False):
-    # user_selected = []
-    # ratio = 80
-    # index = 0
-    # key = ''
+def deleting_product(data):
+    tmp_product = data
+    all_data_product = get_data_product()
 
-    # admin.header('Delete User', 'Menu')
+    list_product([data], False, True)
+    konfirm = input('   Anda yakin? [Y/N] : ').upper()
 
-    # list_user(data)
+    if konfirm != 'Y' and konfirm != 'N':
+        print()
+        view.text_in_line('Inputkan Y atau N')
+        print()
+        input('Enter untuk lanjut')
 
-    # if isRecall:
-    #     key = input('   Pilih User [No] : ')
-    #     if not key.isnumeric():
-    #         print()
-    #         view.text_in_line(
-    #             f'Pilih hanya No 1 sampai {data.__len__()}', color='red')
-    #         print()
-    #         input('Enter untuk lanjut')
-    #         delete_user(data)
-    # else:
-    #     key = input('   Pilih User [No/Username] : ')
-    # back_to_menu(key)
+    if konfirm == 'Y':
+        for index, user in enumerate(all_data_product):
+            if data == user:
+                del all_data_product[index]
+        services.post(db_product, all_data_product)
+        print()
+        view.text_in_line(
+            f"User '{tmp_product['username']}' berhasil dihapus", color='green')
+        print()
+        input('Enter untuk lanjut')
+        delete_product()
 
-    # if key.__len__() == 0:
-    #     delete_user()
-    # elif key.isnumeric():
-    #     deleting_user(data[int(key)-1])
-    # else:
-    #     for i, user in enumerate(data):
-    #         if fuzz.partial_ratio(key, user['username']) >= ratio:
-    #             index = i
-    #             user_selected.append(user)
-
-    #     if user_selected.__len__() == 0:
-    #         print()
-    #         view.text_in_line('User tidak ditemukan', color='red')
-    #         print()
-    #         input('Enter untuk lanjut')
-    #         delete_user()
-    #     elif user_selected.__len__() > 1:
-    #         print()
-    #         view.text_in_line('Ditemukan lebih dari 1 user', color='green')
-    #         print()
-    #         input('Enter untuk lanjut')
-    #         delete_user(user_selected, True)
-    #     else:
-    #         deleting_user(index)
+    if konfirm == 'N':
+        delete_product()

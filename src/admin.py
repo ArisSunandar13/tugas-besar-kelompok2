@@ -24,8 +24,8 @@ def main():
     header('Menu Admin', 'Login')
     view.print_menu(menu_user, menu_product, menu_transaction)
 
-    # key = input('   Pilih Menu : ').upper()
-    key = 'G'
+    key = input('   Pilih Menu : ').upper()
+    # key = 'G'
 
     if key == '0':
         login.main()
@@ -52,6 +52,6 @@ def main():
         if key == 'G':
             service_product.update_product()
         if key == 'H':
-            pass
+            service_product.delete_product()
         if key == 'I':
             pass

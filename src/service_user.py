@@ -218,34 +218,6 @@ def update_user(data=data_users(), isRecall=False):
     input_update_user(tmp_user)
 
 
-def deleting_user(data):
-    tmp_user = data
-    get_data_users = data_users()
-
-    konfirm = input('   Anda yakin? [Y/N] : ').upper()
-
-    if konfirm != 'Y' and konfirm != 'N':
-        print()
-        view.text_in_line('Inputkan Y atau N')
-        print()
-        input('Enter untuk lanjut')
-
-    if konfirm == 'Y':
-        for index, user in enumerate(get_data_users):
-            if data == user:
-                del get_data_users[index]
-        services.post(db_user, get_data_users)
-        print()
-        view.text_in_line(
-            f"User '{tmp_user['username']}' berhasil dihapus", color='green')
-        print()
-        input('Enter untuk lanjut')
-        delete_user()
-
-    if konfirm == 'N':
-        delete_user()
-
-
 # DELETE USER
 def delete_user(data=data_users(), isRecall=False):
     user_selected = []
@@ -293,4 +265,34 @@ def delete_user(data=data_users(), isRecall=False):
             input('Enter untuk lanjut')
             delete_user(user_selected, True)
         else:
-            deleting_user(index)
+            deleting_user(user_selected[0])
+
+
+def deleting_user(data):
+    tmp_user = data
+    get_data_users = data_users()
+
+    admin.header('Delete User', 'Menu')
+    list_user([data], False, True)
+    konfirm = input('   Anda yakin? [Y/N] : ').upper()
+
+    if konfirm != 'Y' and konfirm != 'N':
+        print()
+        view.text_in_line('Inputkan Y atau N')
+        print()
+        input('Enter untuk lanjut')
+
+    if konfirm == 'Y':
+        for index, user in enumerate(get_data_users):
+            if data == user:
+                del get_data_users[index]
+        services.post(db_user, get_data_users)
+        print()
+        view.text_in_line(
+            f"User '{tmp_user['username']}' berhasil dihapus", color='green')
+        print()
+        input('Enter untuk lanjut')
+        delete_user()
+
+    if konfirm == 'N':
+        delete_user()
