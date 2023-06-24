@@ -14,7 +14,7 @@ tmp_user = {}
 
 
 def data_users():
-    return data_db_user
+    return services.get(db_user)
 
 
 def login(username, password):

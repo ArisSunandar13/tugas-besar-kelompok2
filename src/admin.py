@@ -3,6 +3,7 @@ import src.view as view
 import src.service_user as service_user
 import src.services as services
 import src.service_product as service_product
+import src.service_transaction as service_transaction
 from datetime import datetime
 
 
@@ -26,7 +27,7 @@ def main():
     view.print_menu(menu_user, menu_product, menu_transaction)
 
     key = input('   Pilih Menu : ').upper()
-    # key = 'G'
+    # key = 'I'
 
     if key == '0':
         login.main()
@@ -55,4 +56,4 @@ def main():
         if key == 'H':
             service_product.delete_product()
         if key == 'I':
-            pass
+            service_transaction.list_transaction()
