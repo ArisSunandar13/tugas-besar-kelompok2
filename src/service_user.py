@@ -69,6 +69,15 @@ def add_user(isBack=False):
         tmp_user['username'] = input(f"   {'Username':<9} : ")
         back_to_menu(tmp_user['username'])
 
+        for item in data_users():
+            if item['username'] == tmp_user['username']:
+                print()
+                view.text_in_line(
+                    f"Username '{item['username']}' telah terpakai", color='red')
+                print()
+                input()
+                add_user()
+
         tmp_user['password'] = input(f"   {'Password':<9} : ")
         back_to_menu(tmp_user['password'])
 
