@@ -43,6 +43,8 @@ def list_product(data=get_data_product(), isSearch=True, isRecall=False):
         else:
             input('Enter untuk lanjut')
             list_product()
+    else:
+        search_product()
 
 
 def search_product(data=get_data_product()):
@@ -53,7 +55,7 @@ def search_product(data=get_data_product()):
     back_to_menu(key)
 
     if key.__len__() == 0:
-        list_product()
+        list_product(isRecall=True)
     if key.isnumeric():
         found_products.append(data[int(key)-1])
     if key.isalnum():
@@ -61,7 +63,7 @@ def search_product(data=get_data_product()):
             if fuzz.partial_ratio(key, product['name']) >= ratio:
                 found_products.append(product)
 
-    list_product(found_products, False)
+    list_product(found_products, isRecall=True)
 
 
 # ADD PRODUCT

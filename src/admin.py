@@ -3,6 +3,7 @@ import src.view as view
 import src.service_user as service_user
 import src.services as services
 import src.service_product as service_product
+from datetime import datetime
 
 
 def header(title, backto):
@@ -46,7 +47,7 @@ def main():
         if key == 'D':
             service_user.delete_user()
         if key == 'E':
-            service_product.list_product()
+            service_product.list_product(isRecall=True)
         if key == 'F':
             service_product.add_product()
         if key == 'G':
