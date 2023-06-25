@@ -61,7 +61,7 @@ def search_transaction(data=all_data_transaction, isKasir=False):
     else:
         for item in data:
             for product in item['products']:
-                if fuzz.partial_ratio(product['name'], key) >= ratio:
+                if fuzz.partial_ratio(product['name'].lower(), key.lower()) >= ratio:
                     found_transaction.append(item)
 
     return found_transaction
