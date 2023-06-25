@@ -10,13 +10,13 @@ def main():
     view.text_in_line('login', '~')
     print()
 
-    # username = input('   Username : ')
-    # password = input('   Password : ')
-    # print()
+    username = input('   Username : ')
+    password = input('   Password : ')
+    print()
 
-    # user = service_user.login(username, password)
+    user = service_user.login(username, password)
     # user = service_user.login('admin', 'admin123')
-    user = service_user.login('kasir','kasir123')
+    # user = service_user.login('kasir','kasir123')
 
     if type(user) == str:
         view.text_in_line(user, color='red')

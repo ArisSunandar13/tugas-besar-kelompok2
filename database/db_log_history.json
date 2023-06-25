@@ -1195,5 +1195,12 @@
         "action": "Login",
         "date": "25-06-2023",
         "time": "20:44:20"
+    },
+    {
+        "username": "admin",
+        "role": "admin",
+        "action": "Login",
+        "date": "25-06-2023",
+        "time": "20:47:23"
     }
 ]

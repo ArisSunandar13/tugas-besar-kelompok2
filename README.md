@@ -17,3 +17,11 @@
 - Open Terminal
 - Run : ```npm install```
 - Run : ```npm run pos```
+
+#### Account:
+- Admin
+  - Username : admin
+  - Password : admin123
+- Kasir
+  - Username : kasir
+  - Password : kasir123
