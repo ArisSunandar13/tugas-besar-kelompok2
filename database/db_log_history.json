@@ -1181,5 +1181,12 @@
         "action": "Login",
         "date": "25-06-2023",
         "time": "20:38:31"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "25-06-2023",
+        "time": "20:42:29"
     }
 ]

@@ -51,7 +51,7 @@ def search_transaction(data=all_data_transaction, isKasir=False):
     ratio = 90
     found_transaction = []
     view.text_in_line('Enter untuk refresh list transaction', align='right')
-    key = input('   Cari Transaksi [User] : ')
+    key = input('   Cari Transaksi [Produk] : ')
     if key == '0' and not isKasir:
         admin.main()
     if key == '0' and isKasir:
@@ -60,8 +60,9 @@ def search_transaction(data=all_data_transaction, isKasir=False):
         list_transaction(isKasir=isKasir)
     else:
         for item in data:
-            if fuzz.partial_ratio(item['username'], key) >= ratio:
-                found_transaction.append(item)
+            for product in item['products']:
+                if fuzz.partial_ratio(product['name'], key) >= ratio:
+                    found_transaction.append(item)
 
     return found_transaction
 
