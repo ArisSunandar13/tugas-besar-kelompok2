@@ -5,6 +5,7 @@ import src.view as view
 import src.admin as admin
 from fuzzywuzzy import fuzz
 import src.kasir as kasir
+import src.service_transaction as service_transaction
 
 load_dotenv()
 db_product = os.getenv('DB_PRODUCT')
@@ -26,11 +27,12 @@ def back_to_menu(key, isKasir=False):
 
 
 # LIST PRODUCT
-def list_product(data=get_data_product(), isSearch=True, isRecall=False, isKasir=False):
+def list_product(data=get_data_product(), isSearch=True, isRecall=False, isKasir=False, isAddTransaction=False, data_user={}):
     if isRecall and not isKasir:
         admin.header('List Product', 'Menu')
     if isRecall and isKasir:
         kasir.header('List Product', 'Menu')
+
     view.text_in_line(liner='-')
     print(f"   {'No.':<5}{'Nama':<25}{'Harga':<15}{'Stok':<10}")
     view.text_in_line(liner='-')
@@ -42,17 +44,22 @@ def list_product(data=get_data_product(), isSearch=True, isRecall=False, isKasir
     view.text_in_line(liner='-')
     print()
 
-    if not isRecall:
-        if isSearch:
-            search_product(isKasir=isKasir)
+    if not isAddTransaction:
+        if isRecall and isKasir:
+            if data.__len__() == 1:
+                service_transaction.add_transaction(data_user, data[0])
+
+        if not isRecall:
+            if isSearch:
+                search_product(isKasir=isKasir, data_user=data_user)
+            else:
+                input('Enter untuk lanjut')
+                list_product()
         else:
-            input('Enter untuk lanjut')
-            list_product()
-    else:
-        search_product(isKasir=isKasir)
+            search_product(isKasir=isKasir, data_user=data_user)
 
 
-def search_product(data=get_data_product(), isKasir=False):
+def search_product(data=get_data_product(), isKasir=False, data_user={}):
     found_products = []
     ratio = 75
 
@@ -60,15 +67,16 @@ def search_product(data=get_data_product(), isKasir=False):
     back_to_menu(key, isKasir=isKasir)
 
     if key.__len__() == 0:
-        list_product(isRecall=True, isKasir=isKasir)
+        list_product(isRecall=True, isKasir=isKasir, data_user=data_user)
     if key.isnumeric():
         found_products.append(data[int(key)-1])
     if key.isalnum():
         for product in data:
-            if fuzz.partial_ratio(key, product['name']) >= ratio:
+            if fuzz.partial_ratio(key.lower(), product['name'].lower()) >= ratio:
                 found_products.append(product)
 
-    list_product(found_products, isRecall=True, isKasir=isKasir)
+    list_product(found_products, isRecall=True,
+                 isKasir=isKasir, data_user=data_user)
 
 
 # ADD PRODUCT
@@ -353,3 +361,15 @@ def deleting_product(data):
 
     if konfirm == 'N':
         delete_product()
+
+
+def subtract_quantity(subtraction):
+    data = services.get(db_product)
+    for product in subtraction:
+        for i, item in enumerate(data):
+            if product['name'] == item['name']:
+                data[i]['quantity'] = str(
+                    int(item['quantity']) - int(product['quantity'])
+                )
+                break
+    services.post(db_product, data)

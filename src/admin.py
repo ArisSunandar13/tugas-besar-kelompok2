@@ -57,3 +57,9 @@ def main():
             service_product.delete_product()
         if key == 'I':
             service_transaction.list_transaction()
+        else:
+            print()
+            view.text_in_line(f"'{key}' tidak terdaftar", color='red')
+            print()
+            input('Enter untuk lanjut')
+            main()
