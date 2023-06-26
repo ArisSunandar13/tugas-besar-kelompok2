@@ -1,1206 +1,1017 @@
 [
     {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "24-06-2023",
-        "time": "19:50:44"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "24-06-2023",
-        "time": "20:27:00"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "24-06-2023",
-        "time": "20:27:28"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "24-06-2023",
-        "time": "20:28:00"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "24-06-2023",
-        "time": "20:30:54"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "24-06-2023",
-        "time": "20:31:52"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "24-06-2023",
-        "time": "20:33:27"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "24-06-2023",
-        "time": "20:35:41"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "24-06-2023",
-        "time": "20:37:02"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "24-06-2023",
-        "time": "20:45:18"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "24-06-2023",
-        "time": "20:46:32"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "24-06-2023",
-        "time": "20:47:21"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "24-06-2023",
-        "time": "20:47:40"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "24-06-2023",
-        "time": "20:49:56"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "24-06-2023",
-        "time": "20:51:41"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "24-06-2023",
-        "time": "20:55:18"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "24-06-2023",
-        "time": "20:55:43"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "14:52:57"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "14:53:31"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "14:54:17"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "14:54:31"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "14:54:58"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "14:55:33"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "14:59:25"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "15:01:40"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "15:17:49"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "15:18:15"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "15:19:37"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "15:20:09"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "15:20:21"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "15:20:33"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "15:21:12"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "15:27:11"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "15:27:22"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "15:27:54"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "15:28:13"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "15:28:25"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "15:32:02"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "15:33:52"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "15:34:06"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "15:34:47"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "15:35:51"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "15:36:08"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "15:38:12"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "15:40:16"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "15:40:27"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "15:40:53"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "15:41:35"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "15:46:21"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "15:47:34"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "15:48:44"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "15:49:30"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "15:49:56"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "15:51:17"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "15:52:42"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "15:54:09"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "16:02:01"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "16:02:32"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "16:03:39"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "16:04:17"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "16:04:53"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "16:05:06"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "16:05:45"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "16:05:56"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "16:09:00"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "16:09:35"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "16:10:17"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "16:16:27"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "16:25:49"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "16:27:12"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "16:27:59"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "16:28:57"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "16:35:56"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "16:37:09"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "16:54:48"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "16:55:24"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "16:55:43"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "17:09:35"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "17:10:18"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "17:16:31"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "17:17:15"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "17:17:51"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "17:20:51"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "17:36:08"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "17:37:08"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "17:39:22"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "17:40:03"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "17:40:19"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "17:45:14"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "17:47:49"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "17:49:24"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "17:49:49"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "17:51:31"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "18:07:08"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "18:09:10"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "18:09:44"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "18:10:55"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "18:11:53"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "18:14:24"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "18:15:07"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "18:17:08"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "18:31:33"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "18:31:49"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "18:33:39"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "18:45:24"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "18:46:50"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "18:55:31"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "19:04:45"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "19:06:11"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "19:06:38"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "19:08:04"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "19:09:38"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "19:13:49"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "19:15:26"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "19:18:24"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "19:19:39"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "19:27:22"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "19:29:00"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "19:29:25"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "19:30:59"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "19:33:16"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "19:33:51"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "19:39:21"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "19:39:43"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "19:44:59"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "19:46:19"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "19:51:02"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "19:54:39"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "19:55:06"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "19:55:32"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "19:57:11"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "19:59:20"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:00:54"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:04:31"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:06:02"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:06:35"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:07:16"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:08:19"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:09:16"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:09:24"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:09:58"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:13:51"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:16:57"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:17:26"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:20:43"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:21:13"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:22:16"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:22:29"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:23:46"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:24:21"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:24:31"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:24:52"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:25:05"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:26:45"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:27:15"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:28:21"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:28:49"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:29:27"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:30:07"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:30:20"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:30:47"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:31:16"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:32:50"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:33:25"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:34:04"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:34:45"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:37:02"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:37:40"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
-        "action": "Login",
-        "date": "25-06-2023",
-        "time": "20:38:31"
-    },
-    {
-        "username": "kasir",
-        "role": "kasir",
+        "username": "admin",
+        "role": "admin",
         "action": "Login",
         "date": "25-06-2023",
-        "time": "20:42:29"
+        "time": "21:01:45"
     },
     {
         "username": "kasir",
         "role": "kasir",
         "action": "Login",
         "date": "25-06-2023",
-        "time": "20:44:20"
+        "time": "21:07:03"
     },
     {
         "username": "admin",
         "role": "admin",
         "action": "Login",
         "date": "25-06-2023",
-        "time": "20:47:23"
+        "time": "21:08:57"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "25-06-2023",
+        "time": "22:29:07"
+    },
+    {
+        "username": "admin",
+        "role": "admin",
+        "action": "Login",
+        "date": "25-06-2023",
+        "time": "22:29:15"
+    },
+    {
+        "username": "admin",
+        "role": "admin",
+        "action": "Login",
+        "date": "25-06-2023",
+        "time": "22:58:55"
+    },
+    {
+        "username": "Asep",
+        "role": "admin",
+        "action": "Login",
+        "date": "25-06-2023",
+        "time": "23:19:36"
+    },
+    {
+        "username": "Asep",
+        "role": "admin",
+        "action": "Login",
+        "date": "25-06-2023",
+        "time": "23:21:00"
+    },
+    {
+        "username": "Asep",
+        "role": "admin",
+        "action": "Login",
+        "date": "25-06-2023",
+        "time": "23:21:35"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "25-06-2023",
+        "time": "23:26:15"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "25-06-2023",
+        "time": "23:37:19"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "25-06-2023",
+        "time": "23:41:38"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "25-06-2023",
+        "time": "23:46:35"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "25-06-2023",
+        "time": "23:47:33"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "25-06-2023",
+        "time": "23:47:53"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "25-06-2023",
+        "time": "23:49:12"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "25-06-2023",
+        "time": "23:51:28"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "25-06-2023",
+        "time": "23:55:31"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "25-06-2023",
+        "time": "23:58:01"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "25-06-2023",
+        "time": "23:59:42"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:01:09"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:01:59"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:04:52"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:07:50"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:08:44"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:10:02"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:12:18"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:13:36"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:14:25"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:16:56"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:18:55"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:20:24"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:21:50"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:24:40"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:27:02"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:30:34"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:30:58"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:32:39"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:33:10"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:35:00"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:37:33"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:38:12"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:38:38"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:39:59"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:40:38"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:41:29"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:43:11"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:44:43"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:45:21"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:45:57"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:46:15"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:47:03"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:51:02"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:51:32"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:55:52"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "00:58:05"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "01:00:20"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "01:01:32"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "01:02:16"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "01:03:57"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "01:05:00"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "01:06:03"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "01:08:25"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "01:10:18"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "01:11:11"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "01:13:39"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "01:15:12"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "01:17:43"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "01:18:34"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "14:06:04"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "14:09:23"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "14:09:31"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "14:10:23"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "14:11:15"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "14:11:20"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "14:11:45"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "14:18:06"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "14:18:41"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "14:21:41"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "14:26:52"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "14:27:50"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "14:28:11"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "14:28:28"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "14:37:30"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "14:37:54"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "14:38:59"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "14:43:22"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "14:44:01"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "14:45:11"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "14:46:28"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:05:17"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:08:41"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:15:05"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:15:11"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:19:17"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:20:27"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:20:40"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:21:34"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:23:38"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:23:56"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:24:11"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:25:21"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:26:41"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:27:54"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:28:46"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:29:39"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:29:56"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:30:11"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:30:29"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:32:08"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:33:04"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:38:59"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:41:28"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:42:09"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:42:46"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:43:05"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:43:46"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:44:12"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:45:41"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:45:54"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:46:18"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:46:51"
+    },
+    {
+        "username": "admin",
+        "role": "admin",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:47:39"
+    },
+    {
+        "username": "admin",
+        "role": "admin",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:48:04"
+    },
+    {
+        "username": "admin",
+        "role": "admin",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:48:40"
+    },
+    {
+        "username": "admin",
+        "role": "admin",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:50:19"
+    },
+    {
+        "username": "admin",
+        "role": "admin",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "15:51:48"
+    },
+    {
+        "username": "admin",
+        "role": "admin",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "16:04:23"
+    },
+    {
+        "username": "admin",
+        "role": "admin",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "16:05:40"
+    },
+    {
+        "username": "admin",
+        "role": "admin",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "16:09:09"
+    },
+    {
+        "username": "admin",
+        "role": "admin",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "16:12:26"
+    },
+    {
+        "username": "admin",
+        "role": "admin",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "16:17:01"
+    },
+    {
+        "username": "admin",
+        "role": "admin",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "16:17:58"
+    },
+    {
+        "username": "admin",
+        "role": "admin",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "16:18:24"
+    },
+    {
+        "username": "admin",
+        "role": "admin",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "16:18:46"
+    },
+    {
+        "username": "admin",
+        "role": "admin",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "16:19:30"
+    },
+    {
+        "username": "admin",
+        "role": "admin",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "16:20:44"
+    },
+    {
+        "username": "admin",
+        "role": "admin",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "16:22:00"
+    },
+    {
+        "username": "admin",
+        "role": "admin",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "16:22:51"
+    },
+    {
+        "username": "admin",
+        "role": "admin",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "16:24:34"
+    },
+    {
+        "username": "admin",
+        "role": "admin",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "16:27:10"
+    },
+    {
+        "username": "admin",
+        "role": "admin",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "16:27:57"
+    },
+    {
+        "username": "admin",
+        "role": "admin",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "16:28:23"
+    },
+    {
+        "username": "admin",
+        "role": "admin",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "16:32:25"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "26-06-2023",
+        "time": "16:32:38"
     }
 ]

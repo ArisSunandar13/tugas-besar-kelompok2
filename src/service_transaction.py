@@ -67,24 +67,19 @@ def search_transaction(data=all_data_transaction, isKasir=False):
     return found_transaction
 
 
-def add_transaction(data_user, data_product={}, isRecall=False):
-    user = data_user
-
+def add_transaction(data_user, data_product={}):
     kasir.header('Tambah Transaksi', 'Menu')
 
-    if not isRecall:
-        if data_product.__len__() == 0:
-            service_product.list_product(isKasir=True, data_user=data_user)
-        else:
-            selected_products.append(data_product)
-
-    if selected_products.__len__() > 0:
+    if data_product.__len__() > 0:
+        selected_products.append(data_product)
+        service_product.list_product([data_product], isKasir=True)
+    else:
         service_product.list_product(
-            [selected_products[-1]], False, False, True, True)
+            isKasir=True, isSearch=True, isAddTransaction=True, data_user=data_user)
 
     count = input('   Banyaknya : ')
     if count.__len__() == 0:
-        add_transaction(data_user, isRecall=True)
+        add_transaction(data_user, data_product)
     if count.isnumeric():
         if int(count) > int(selected_products[-1]['quantity']):
             print()
@@ -92,7 +87,7 @@ def add_transaction(data_user, data_product={}, isRecall=False):
                 f"Stok produk tersisa {selected_products[-1]['quantity']}", color='red')
             print()
             input('Enter untuk lanjut')
-            add_transaction(data_user, isRecall=True)
+            add_transaction(data_user)
         else:
             count_products.append(count)
     else:

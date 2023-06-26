@@ -48,7 +48,7 @@ def main():
         if key == 'D':
             service_user.delete_user()
         if key == 'E':
-            service_product.list_product(isRecall=True)
+            service_product.list_product(isSearch=True)
         if key == 'F':
             service_product.add_product()
         if key == 'G':

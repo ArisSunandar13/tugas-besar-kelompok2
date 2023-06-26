@@ -14,7 +14,7 @@ tmp_user = {}
 
 
 def data_users():
-    return services.get(db_user)
+    return data_db_user
 
 
 def login(username, password):
@@ -253,7 +253,7 @@ def delete_user(data=data_users(), isRecall=False):
 
     if key.__len__() == 0:
         delete_user()
-    elif key.isnumeric():
+    elif key.isnumeric() and key.__len__() < 3:
         deleting_user(data[int(key)-1])
     else:
         for i, user in enumerate(data):

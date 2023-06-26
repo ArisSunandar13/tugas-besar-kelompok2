@@ -10,13 +10,8 @@
         "role": "kasir"
     },
     {
-        "username": "123",
-        "password": "12345",
-        "role": "kasir"
-    },
-    {
-        "username": "blabla",
-        "password": "blabla",
+        "username": "zeagluke",
+        "password": "zeagluke123",
         "role": "kasir"
     },
     {
@@ -27,6 +22,16 @@
     {
         "username": "hesoyam",
         "password": "123",
+        "role": "admin"
+    },
+    {
+        "username": "Asep",
+        "password": "asep123",
+        "role": "admin"
+    },
+    {
+        "username": "agus",
+        "password": "agus123",
         "role": "admin"
     }
 ]

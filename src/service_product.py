@@ -27,11 +27,11 @@ def back_to_menu(key, isKasir=False):
 
 
 # LIST PRODUCT
-def list_product(data=get_data_product(), isSearch=True, isRecall=False, isKasir=False, isAddTransaction=False, data_user={}):
-    if isRecall and not isKasir:
-        admin.header('List Product', 'Menu')
-    if isRecall and isKasir:
+def list_product(data=get_data_product(), isKasir=False, isSearch=False, isAddTransaction=False, data_user={}):
+    if isKasir:
         kasir.header('List Product', 'Menu')
+    else:
+        admin.header('List Product', 'Menu')
 
     view.text_in_line(liner='-')
     print(f"   {'No.':<5}{'Nama':<25}{'Harga':<15}{'Stok':<10}")
@@ -44,39 +44,48 @@ def list_product(data=get_data_product(), isSearch=True, isRecall=False, isKasir
     view.text_in_line(liner='-')
     print()
 
-    if not isAddTransaction:
-        if isRecall and isKasir:
-            if data.__len__() == 1:
-                service_transaction.add_transaction(data_user, data[0])
+    if isAddTransaction and data.__len__() == 1:
+        service_transaction.add_transaction(data_user, data[0])
 
-        if not isRecall:
-            if isSearch:
-                search_product(isKasir=isKasir, data_user=data_user)
-            else:
-                input('Enter untuk lanjut')
-                list_product()
-        else:
-            search_product(isKasir=isKasir, data_user=data_user)
+    if isSearch:
+        search_product(data, isKasir, isSearch, isAddTransaction, data_user)
+    else:
+        return
 
 
-def search_product(data=get_data_product(), isKasir=False, data_user={}):
+def search_product(data, isKasir, isSearch, isAddTransaction, data_user={}):
     found_products = []
-    ratio = 75
+    ratio = 80
 
+    view.text_in_line('Enter untuk refresh produk', align='right')
     key = input('   Cari Product [No/Nama] : ')
     back_to_menu(key, isKasir=isKasir)
 
     if key.__len__() == 0:
-        list_product(isRecall=True, isKasir=isKasir, data_user=data_user)
-    if key.isnumeric():
+        list_product(get_data_product(), isKasir,
+                     isSearch, isAddTransaction, data_user)
+    elif key.isnumeric():
+        if int(key) > data.__len__():
+            print()
+            view.text_in_line('Produk tidak ditemukan', color='red')
+            print()
+            input('Enter untuk lanjut')
+            list_product(data, isKasir, isSearch, isAddTransaction, data_user)
         found_products.append(data[int(key)-1])
-    if key.isalnum():
+    else:
         for product in data:
-            if fuzz.partial_ratio(key.lower(), product['name'].lower()) >= ratio:
+            if fuzz.partial_ratio(product['name'].lower(), key.lower()) >= ratio:
                 found_products.append(product)
 
-    list_product(found_products, isRecall=True,
-                 isKasir=isKasir, data_user=data_user)
+    if found_products.__len__() == 0:
+        print()
+        view.text_in_line('Produk tidak ditemukan', color='red')
+        print()
+        input('Enter untuk lanjut')
+        list_product(data, isKasir, isSearch, isAddTransaction, data_user)
+    else:
+        list_product(found_products, isKasir, isSearch,
+                     isAddTransaction, data_user)
 
 
 # ADD PRODUCT
@@ -158,7 +167,7 @@ def add_product(data_recall={}):
 def update_product(data=get_data_product()):
     found_products = []
     admin.header('Update Produk', 'Menu')
-    list_product(isSearch=False, isRecall=True)
+    list_product(data)
 
     key = input("   Pilih Produk [No/Nama] : ")
     back_to_menu(key)
@@ -167,10 +176,10 @@ def update_product(data=get_data_product()):
         update_product()
     elif key.isnumeric():
         tmp_product = data[int(key)-1]
-        list_product([tmp_product], False, True)
+        list_product([tmp_product])
     elif not key.isnumeric():
         for product in data:
-            if fuzz.partial_ratio(key, product['name']) >= 75:
+            if fuzz.partial_ratio(key, product['name']) >= 80:
                 found_products.append(product)
 
         if found_products.__len__() < 1:
@@ -180,17 +189,17 @@ def update_product(data=get_data_product()):
             input('Enter untuk lanjut')
         elif found_products.__len__() == 1:
             tmp_product = found_products[0]
-            list_product(found_products, False, True)
+            list_product(found_products)
         elif found_products.__len__() > 1:
             print()
             view.text_in_line('Ditemukan lebih dari 1 produk', color='green')
             print()
             input('Enter untuk lanjut')
-            list_product(found_products, False, True)
+            list_product(found_products)
             tmp_product = research_products(found_products)
 
     admin.header('Update Produk', 'Menu')
-    list_product([tmp_product], False, True)
+    list_product([tmp_product])
     product = input_product(data_product=tmp_product)
 
     all_products = get_data_product()
@@ -210,7 +219,7 @@ def update_product(data=get_data_product()):
 
 def input_product(data={}, data_product={}):
     admin.header('Update Produk', 'Menu')
-    list_product([data_product], False, True)
+    list_product([data_product])
     if data.__len__() >= 1:
         print(f"   {'Nama produk baru':<17} : {data['name']}")
     else:
@@ -269,7 +278,7 @@ def input_product(data={}, data_product={}):
 
 def research_products(data):
     admin.header('Update Product', 'Menu')
-    list_product(data, False, True)
+    list_product(data)
     key = input("   'Pilih Produk [No] : ")
     back_to_menu(key)
     if key.__len__() == 0:
@@ -294,7 +303,7 @@ def delete_product(data=get_data_product(), isRecall=False):
 
     admin.header('Delete Produk', 'Menu')
 
-    list_product(data, False, True)
+    list_product(data)
 
     if isRecall:
         key = input('   Pilih Produk [No] : ')
@@ -338,7 +347,7 @@ def deleting_product(data):
     tmp_product = data
     all_data_product = get_data_product()
 
-    list_product([data], False, True)
+    list_product([data])
     konfirm = input('   Anda yakin? [Y/N] : ').upper()
 
     if konfirm != 'Y' and konfirm != 'N':
@@ -351,12 +360,14 @@ def deleting_product(data):
         for index, user in enumerate(all_data_product):
             if data == user:
                 del all_data_product[index]
-        services.post(db_product, all_data_product)
+
         print()
         view.text_in_line(
-            f"User '{tmp_product['username']}' berhasil dihapus", color='green')
+            f"Produk '{tmp_product['name']}' berhasil dihapus", color='green')
         print()
         input('Enter untuk lanjut')
+
+        services.post(db_product, all_data_product)
         delete_product()
 
     if konfirm == 'N':

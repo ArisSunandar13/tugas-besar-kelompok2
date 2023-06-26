@@ -78,5 +78,40 @@
         "cashback": "4250",
         "date": "25-06-2023",
         "time": "20:10:26"
+    },
+    {
+        "username": "kasir",
+        "products": [
+            {
+                "name": "sarimi",
+                "price": "2000",
+                "quantity": "2"
+            }
+        ],
+        "total": "4000",
+        "pay": "5000",
+        "cashback": "1000",
+        "date": "26-06-2023",
+        "time": "00:56:05"
+    },
+    {
+        "username": "kasir",
+        "products": [
+            {
+                "name": "supermie",
+                "price": "5000",
+                "quantity": "2"
+            },
+            {
+                "name": "lemonilo",
+                "price": "6000",
+                "quantity": "3"
+            }
+        ],
+        "total": "28000",
+        "pay": "30000",
+        "cashback": "2000",
+        "date": "26-06-2023",
+        "time": "15:46:38"
     }
 ]

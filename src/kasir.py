@@ -15,6 +15,7 @@ def main():
     view.print_menu(menu_kasir)
     
     key = input(f"   Pilih Menu : ").upper()
+    # key = 'C'
     if key == '0':
         login.main()
         
@@ -29,8 +30,7 @@ def main():
         main()
     else:
         if key == 'A':
-            header('List Product', 'Menu')
-            service_product.list_product(isKasir=True)
+            service_product.list_product(isKasir=True, isSearch=True)
         if key == 'B':
             service_transaction.list_transaction(isKasir=True)
         if key == 'C':

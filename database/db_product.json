@@ -1,8 +1,8 @@
 [
     {
-        "name": "sarimi",
-        "price": "2000",
-        "quantity": "8"
+        "name": "Sarimi",
+        "price": "2500",
+        "quantity": "100"
     },
     {
         "name": "Indomie",
@@ -12,17 +12,12 @@
     {
         "name": "supermie",
         "price": "5000",
-        "quantity": "150"
-    },
-    {
-        "name": "miesedap",
-        "price": "2350",
-        "quantity": "140"
+        "quantity": "148"
     },
     {
         "name": "lemonilo",
         "price": "6000",
-        "quantity": "120"
+        "quantity": "117"
     },
     {
         "name": "Samyang",
