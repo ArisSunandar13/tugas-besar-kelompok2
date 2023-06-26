@@ -2,26 +2,26 @@
     {
         "name": "Sarimi",
         "price": "2500",
-        "quantity": "100"
+        "quantity": "98"
     },
     {
         "name": "Indomie",
         "price": "3250",
-        "quantity": "160"
+        "quantity": "158"
     },
     {
         "name": "supermie",
         "price": "5000",
-        "quantity": "148"
+        "quantity": "142"
     },
     {
         "name": "lemonilo",
         "price": "6000",
-        "quantity": "117"
+        "quantity": "109"
     },
     {
         "name": "Samyang",
         "price": "14500",
-        "quantity": "100"
+        "quantity": "97"
     }
 ]

@@ -22,6 +22,7 @@ selected_products = []
 count_products = []
 
 
+
 def list_transaction(data=all_data_transaction, isKasir=False):
     if isKasir:
         kasir.header('List Transaction', 'Menu')
@@ -43,11 +44,11 @@ def list_transaction(data=all_data_transaction, isKasir=False):
             view.text_in_line(liner='-')
     print()
 
-    result = search_transaction(data, isKasir=isKasir)
+    search_transaction(data, isKasir=isKasir)
     list_transaction(result, isKasir=isKasir)
 
 
-def search_transaction(data=all_data_transaction, isKasir=False):
+def search_transaction(data, isKasir=False):
     ratio = 90
     found_transaction = []
     view.text_in_line('Enter untuk refresh list transaction', align='right')
@@ -102,6 +103,9 @@ def add_transaction(data_user, data_product={}):
     list_product_transaction(selected_products)
 
     again = input('   Lagi? [y/n] : ').upper()
+    if again != 'Y' and again != 'N':
+        again = input('   Lagi? [y/n] : ').upper()
+
     if again == 'Y' or again == 'N':
         if again == 'Y':
             add_transaction(data_user)
@@ -111,8 +115,6 @@ def add_transaction(data_user, data_product={}):
             list_product_transaction(selected_products, pay)
 
             post_transaction(data_user, pay)
-    else:
-        again = input('   Lagi? [y/n]')
 
 
 def list_product_transaction(data, pay=0):
@@ -183,10 +185,11 @@ def post_transaction(user, pay):
         'time': datetime.now().strftime("%H:%M:%S")
     }
 
-    data_transactions = all_data_transaction
+    data_transactions = services.get(db_transaction)
     data_post_transaction = data_transactions + [data]
 
     services.post(db_transaction, data_post_transaction)
 
     input('Enter untuk kembali ke Menu')
+    
     kasir.main()
