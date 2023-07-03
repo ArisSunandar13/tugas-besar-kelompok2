@@ -28,10 +28,5 @@
         "username": "Asep",
         "password": "asep123",
         "role": "admin"
-    },
-    {
-        "username": "agus",
-        "password": "agus123",
-        "role": "admin"
     }
 ]

@@ -44,7 +44,7 @@ def list_transaction(data=all_data_transaction, isKasir=False):
             view.text_in_line(liner='-')
     print()
 
-    search_transaction(data, isKasir=isKasir)
+    result = search_transaction(data, isKasir=isKasir)
     list_transaction(result, isKasir=isKasir)
 
 
