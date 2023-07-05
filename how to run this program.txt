@@ -1,0 +1,21 @@
+1. Pastikan PIP (Package Installer for Python) sudah terinstall :
+    - Untuk cek apakah PIP sudah terinstall, ketikan perintah berikut :
+        pip3 --version
+    - Jika pip3 terdeteksi, silahkan lanjutkan ke point no 2
+    - Jika pip3 tidak terdeteksi, silahkan ketikan perintah berikut pada terminal/cmd :
+        python3 get-pip.py
+
+2. Install library yang dibutuhkan dengan menggunakan PIP (Package Installer for Python) :
+    - Install dotenv dengan cara ketikan perintah berikut pada terminal/cmd :
+        pip3 install python-dotenv
+    - Install fuzzywuzzy dengan cara ketikan perintah berikut pada terminal/cmd :
+        pip3 install fuzzywuzzy
+
+3. Jalankan program dengan mengetikan perintah berikut pada terminal :
+    python3 main.py
+
+
+
+
+Author : Aris Sunandar
+github : https://github.com/ArisSunandar13/tugas-besar-kelompok2.git

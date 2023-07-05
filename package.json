@@ -4,8 +4,7 @@
   "description": "## Point of Sales (PoS) Warunk Mama Padil",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "pos": "nodemon --exec \"python3\" main.py --ignore database/"
+    "test": "nodemon --exec \"python3\" main.py --ignore database/"
   },
   "keywords": [],
   "author": "",

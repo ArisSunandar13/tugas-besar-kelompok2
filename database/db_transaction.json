@@ -58,5 +58,25 @@
         "cashback": "995000",
         "date": "26-06-2023",
         "time": "20:58:04"
+    },
+    {
+        "username": "kasir",
+        "products": [
+            {
+                "name": "Samyang",
+                "price": "14500",
+                "quantity": "3"
+            },
+            {
+                "name": "Mie Ayam Yamin",
+                "price": "18000",
+                "quantity": "2"
+            }
+        ],
+        "total": "79500",
+        "pay": "80000",
+        "cashback": "500",
+        "date": "04-07-2023",
+        "time": "00:32:12"
     }
 ]

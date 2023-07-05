@@ -10,11 +10,6 @@
         "quantity": "158"
     },
     {
-        "name": "supermie",
-        "price": "5000",
-        "quantity": "142"
-    },
-    {
         "name": "lemonilo",
         "price": "6000",
         "quantity": "109"
@@ -22,6 +17,11 @@
     {
         "name": "Samyang",
         "price": "14500",
-        "quantity": "97"
+        "quantity": "94"
+    },
+    {
+        "name": "Mie Ayam Yamin",
+        "price": "18000",
+        "quantity": "78"
     }
 ]

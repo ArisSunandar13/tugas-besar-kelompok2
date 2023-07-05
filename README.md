@@ -5,7 +5,6 @@
 ### Library:
 - dotenv => set environment variable
 - fuzzywuzzy => search string
-- colorama => text coloring
 
 ### How to run:
 
@@ -18,7 +17,7 @@
 - Run : ```npm install```
 - Run : ```npm run pos```
 
-#### Account:
+#### User Account:
 - Admin
   - Username : admin
   - Password : admin123

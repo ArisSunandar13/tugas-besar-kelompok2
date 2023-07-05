@@ -1,1 +1,23 @@
-[]
+[
+    {
+        "username": "admin",
+        "role": "admin",
+        "action": "Login",
+        "date": "04-07-2023",
+        "time": "00:26:04"
+    },
+    {
+        "username": "kasir",
+        "role": "kasir",
+        "action": "Login",
+        "date": "04-07-2023",
+        "time": "00:30:46"
+    },
+    {
+        "username": "admin",
+        "role": "admin",
+        "action": "Login",
+        "date": "05-07-2023",
+        "time": "10:34:19"
+    }
+]
